@@ -12,13 +12,16 @@
 <body>
     <header>
         <div class="conteiner conteiner-flex">
-            <a href="#" class="carrinho">
-                <span class="material-icons">
+            <a href="#">
+                <span class="material-icons carrinho">
                     shopping_cart
-                    </span>
+                </span>
             </a>
             <h1>PixelLab</h1>
             <span class="material-icons menu-hamburger">menu</span>
+        </div>
+        <div class="botao-menu">
+            <button type="button">Abrir Conteudo</button>
         </div>
         <nav class="conteiner">
             <ul class="menu">
@@ -89,6 +92,8 @@
         <div class="conteiner conteiner-flex">
             <div class="sobrenos">
                 <img src="images/loja-temlate.jpg" alt="">
+            </div>
+            <div class="sobrenos">
                 <h2>Sobre Nos</h2>
                 <p>
                     A Pixellab é mais do que uma simples loja de jogos - é o seu portal para o universo dos games.
@@ -121,14 +126,14 @@
                 <img src="images/doom-eternal-xbox.png" alt="">
                 <h3>Doom Eternal</h3>
                 <p class="promocao">de R$ 150,00</p>
-                <p class="adjust">Por <strong>R$ 250,00</strong></p>
+                <p class="">Por <strong>R$ 250,00</strong></p>
                 <button type="submit">Adicionar ao Carrinho</button>
             </article>
             <article class="jogo">
                 <img src="images/horizon-zero-dawn.png" />
                 <h3>Horizon - Zero Dawn</h3>
                 <p class="promocao">de R$ 299,00</p>
-                <p class="adjust">Por <strong>R$ 250,00</strong></p>
+                <p class="">Por <strong>R$ 250,00</strong></p>
                 <button type="submit">Adicionar ao Carrinho</button>
             </article>
             <article class="jogo">
@@ -144,6 +149,13 @@
     <footer>
         <p> &copy; Feito por Gabriel Bueno, Todos os direitos reservados!</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.botao-menu button').click(function (){
+                $('.menu').slideToggle()
+            })
+        })
+    </script>
 </body>
-
 </html>

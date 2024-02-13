@@ -101,7 +101,7 @@ nav li {
     text-decoration: none;
 }
 
-.sobrenos img{
+.sobrenos img {
     width: 320px;
     height: 320px;
 }
@@ -123,8 +123,12 @@ section p {
     margin-bottom: 5px;
 }
 
-.conteudo{
+.conteudo {
     display: grid;
+}
+
+.jogo article {
+    height: 300px;
 }
 
 .jogos-venda {
@@ -133,41 +137,41 @@ section p {
     column-gap: 1%;
 }
 
-.jogos-venda img{
+.jogos-venda img {
     width: 100%;
     height: 320px;
 }
 
-.jogo-catalogo{
+.jogo-catalogo {
     margin-top: 25px;
 }
 
-.jogo-catalogo h2{
+.jogo-catalogo h2 {
     color: #076dc1;
     border-bottom: 1px solid black;
     margin-bottom: 10px;
 }
 
-.jogo-catalogo h3{
+.jogo-catalogo h3 {
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
 }
 
-.jogo-catalogo p{
+.jogo-catalogo p {
     margin-bottom: 5px;
     text-align: center;
 }
 
-.promocao{
+.promocao {
     text-decoration: line-through;
 }
 
-.jogo .adjust{
+.jogo .adjust {
     margin-bottom: 27px;
 }
 
-.jogos-venda button{
+.jogos-venda button {
     background-color: #076dc1;
     color: white;
     font-weight: bold;
@@ -176,7 +180,112 @@ section p {
     width: 100%;
 }
 
-footer{
-    background-color: #06243d;
+.botao-menu{
+    display:none;
 }
 
+footer {
+    background-color: #06243d;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .conteiner {
+        display: block;
+    }
+
+    header {
+        margin-bottom: 15px;
+    }
+
+    .sobrenos img {
+        display: block;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+
+    .sobrenos h2,
+    .sobrenos p {
+        width: 95%;
+        margin: auto;
+    }
+
+    .sobrenos h2 {
+        margin-bottom: 5px;
+    }
+
+    .submenu {
+        display: block;
+        border: 1px solid #84b9e4;
+        background-color: #2f84c9;
+        width: 100%;
+        position: relative;
+        border: none;
+    }
+
+    .menu {
+        display: none;
+        margin-left: 20%;
+    }
+
+    .submenu li {
+        display: block;
+        padding: 8px;
+    }
+
+    .submenu a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    .botao-menu button {
+        background-color: #076dc1;
+        color: white;
+        font-weight: bold;
+        padding: 5px;
+        border: none;
+    }
+
+    .carrinho{
+        margin-left: 6px;
+    }
+    
+    .jogos-venda {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 50%;
+        column-gap: 1%;
+    }
+
+    .jogos-venda img{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .conteiner{
+        max-width: 95%;
+    }
+
+    .jogos-venda {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 49%);
+        row-gap: 5%;
+        column-gap: 1%;
+    }
+
+    footer{
+        margin-top: 70px;
+    }
+}
